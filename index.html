@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sign-in Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <form class="my-form">
+      <div class="login-welcome-row">
+        <h1>Sign-in Page</h1>
+        <p>Please enter your details!</p>
+      </div>
+      <div class="input__wrapper">
+        <input
+          type="text"
+          id="username"
+          name="username"
+          class="input__field"
+          placeholder="Your UserName"
+          required
+        />
+        <label for="username" class="input__label">UserName</label>
+        <div id="username-error" class="input__error"></div>
+      </div>
+      <div class="input__wrapper">
+        <input
+          id="password"
+          type="password"
+          class="input__field"
+          placeholder="Your Password"
+          title="Minimum 6 characters at least 1 Alphabet and 1 Number"
+          required
+        />
+        <label for="password" class="input__label">Password</label>
+        <div id="password-error" class="input__error"></div>
+      </div>
+
+      <button type="submit" class="my-form__button">Sign in</button>
+    </form>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
